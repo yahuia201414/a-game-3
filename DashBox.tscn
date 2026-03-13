@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxp4p1ml5h1wm"]
+
+[ext_resource type="Script" path="res://DashBox.gd" id="1_y416g"]
+[ext_resource type="Texture2D" uid="uid://ee0gpr3k1ewd" path="res://Free/Menu/Buttons/Back.png" id="2_l4pgp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yajxx"]
+size = Vector2(12, 11)
+
+[node name="DashBox" type="Area2D"]
+script = ExtResource("1_y416g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1.5)
+shape = SubResource("RectangleShape2D_yajxx")
+
+[node name="Back" type="Sprite2D" parent="."]
+position = Vector2(-1, -2)
+texture = ExtResource("2_l4pgp")
